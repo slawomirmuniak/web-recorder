@@ -1,8 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-
 using Microsoft.Web.WebView2.Core;
-
 using Recorder.Contracts.Services;
 using Recorder.Contracts.ViewModels;
 
@@ -12,11 +10,11 @@ namespace Recorder.ViewModels;
 // https://docs.microsoft.com/microsoft-edge/webview2/get-started/winui
 // https://docs.microsoft.com/microsoft-edge/webview2/concepts/developer-guide
 // https://docs.microsoft.com/microsoft-edge/webview2/concepts/distribution
-public partial class WebViewViewModel : ObservableRecipient, INavigationAware
+public partial class RecorderViewModel : ObservableRecipient, INavigationAware
 {
     // TODO: Set the default URL to display.
     [ObservableProperty]
-    private Uri source = new("https://docs.microsoft.com/windows/apps/");
+    private Uri source = new("about:blank");
 
     [ObservableProperty]
     private bool isLoading = true;
@@ -29,7 +27,7 @@ public partial class WebViewViewModel : ObservableRecipient, INavigationAware
         get;
     }
 
-    public WebViewViewModel(IWebViewService webViewService)
+    public RecorderViewModel(IWebViewService webViewService)
     {
         WebViewService = webViewService;
     }

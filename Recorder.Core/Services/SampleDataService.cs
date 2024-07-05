@@ -504,14 +504,6 @@ public class SampleDataService : ISampleDataService
         return _allOrders;
     }
 
-    public async Task<IEnumerable<SampleOrder>> GetGridDataAsync()
-    {
-        _allOrders ??= new List<SampleOrder>(AllOrders());
-
-        await Task.CompletedTask;
-        return _allOrders;
-    }
-
     public async Task<IEnumerable<SampleOrder>> GetListDetailsDataAsync()
     {
         _allOrders ??= new List<SampleOrder>(AllOrders());

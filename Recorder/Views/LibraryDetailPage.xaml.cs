@@ -1,5 +1,5 @@
 ﻿using CommunityToolkit.WinUI.UI.Animations;
-
+using CommunityToolkit.WinUI.UI.Controls;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
 
@@ -8,16 +8,16 @@ using Recorder.ViewModels;
 
 namespace Recorder.Views;
 
-public sealed partial class ContentGridDetailPage : Page
+public sealed partial class LibraryDetailPage : Page
 {
-    public ContentGridDetailViewModel ViewModel
+    public LibraryDetailViewModel ViewModel
     {
         get;
     }
 
-    public ContentGridDetailPage()
+    public LibraryDetailPage()
     {
-        ViewModel = App.GetService<ContentGridDetailViewModel>();
+        ViewModel = App.GetService<LibraryDetailViewModel>();
         InitializeComponent();
     }
 
@@ -38,6 +38,14 @@ public sealed partial class ContentGridDetailPage : Page
             {
                 navigationService.SetListDataItemForNextConnectedAnimation(ViewModel.Item);
             }
+        }
+    }
+
+    private void OnViewStateChanged(object sender, ListDetailsViewState e)
+    {
+        if (e == ListDetailsViewState.Both)
+        {
+            ViewModel.EnsureItemSelected();
         }
     }
 }

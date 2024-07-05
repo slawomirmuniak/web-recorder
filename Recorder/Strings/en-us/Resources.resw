@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppDisplayName" xml:space="preserve">
-    <value>Recorder</value>
+    <value>Web Recorder</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>Recorder</value>
+    <value>Web Recorder</value>
   </data>
   <data name="Shell_Main.Content" xml:space="preserve">
     <value>Home</value>
@@ -159,8 +159,8 @@
   <data name="OpenInBrowserButton.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
     <value>Open in browser</value>
   </data>
-  <data name="Shell_WebView.Content" xml:space="preserve">
-    <value>WebView</value>
+  <data name="Shell_Recorder.Content" xml:space="preserve">
+    <value>Recorder</value>
   </data>
   <data name="ListDetails_NoSelection.Text" xml:space="preserve">
     <value>Select an item from the list.</value>
@@ -168,11 +168,8 @@
   <data name="Shell_ListDetails.Content" xml:space="preserve">
     <value>ListDetails</value>
   </data>
-  <data name="Shell_ContentGrid.Content" xml:space="preserve">
-    <value>ContentGrid</value>
-  </data>
-  <data name="Shell_DataGrid.Content" xml:space="preserve">
-    <value>DataGrid</value>
+  <data name="Shell_Library.Content" xml:space="preserve">
+    <value>Library</value>
   </data>
   <data name="Settings_Personalization.Text" xml:space="preserve">
     <value>Personalization</value>
